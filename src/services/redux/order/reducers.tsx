@@ -11,11 +11,11 @@ export const INITIAL_STATE = {
     isSavingOrder: false,
 };
 
-export const getAllUserOrder = (state = INITIAL_STATE, action) => {
+export const getAllUserOrder = (state = INITIAL_STATE, action: any) => {
     return {...state, isLoadingOrder: true, error: false};
 };
 
-export const getAllUserOrderSucess = (state = INITIAL_STATE, action) => {
+export const getAllUserOrderSucess = (state = INITIAL_STATE, action: any) => {
     return {
         ...state,
         isLoadingOrder: false,
@@ -24,7 +24,7 @@ export const getAllUserOrderSucess = (state = INITIAL_STATE, action) => {
     };
 };
 
-export const getAllUserOrderFailure = (state = INITIAL_STATE, action) => {
+export const getAllUserOrderFailure = (state = INITIAL_STATE, action: any) => {
     return {
         ...state,
         isLoadingOrder: false,
@@ -33,11 +33,11 @@ export const getAllUserOrderFailure = (state = INITIAL_STATE, action) => {
     };
 };
 
-export const createNewUserOrder = (state = INITIAL_STATE, action) => {
+export const createNewUserOrder = (state = INITIAL_STATE, action: any) => {
     return {...state, isSavingOrder: true, error: false};
 };
 
-export const createNewUserOrderSucess = (state = INITIAL_STATE, action) => {
+export const createNewUserOrderSucess = (state = INITIAL_STATE, action: any) => {
     return {
         ...state,
         isSavingOrder: false,
@@ -45,7 +45,7 @@ export const createNewUserOrderSucess = (state = INITIAL_STATE, action) => {
     };
 };
 
-export const createNewUserOrderFailure = (state = INITIAL_STATE, action) => {
+export const createNewUserOrderFailure = (state = INITIAL_STATE, action: any) => {
     return {
         ...state,
         isSavingOrder: false,

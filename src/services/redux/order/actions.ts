@@ -9,5 +9,6 @@ export const { Types, Creators } = createActions(
         createUserOrderRequest: ['data'],
         createUserOrderSuccess: ['responseData'],
         createUserOrderFailure: ['responseData'],
-    },{},
+    },
+    {prefix: ''},
 );

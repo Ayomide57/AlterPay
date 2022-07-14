@@ -12,5 +12,5 @@ export default createTypes(
     CREATE_USER_ORDER_FAILURE
 
     `,
-    {},
+    {prefix: ''},
 );
