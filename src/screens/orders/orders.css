@@ -1,0 +1,9 @@
+.orders h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.orders button {
+    margin-bottom: 2rem;
+    float: right;
+}
